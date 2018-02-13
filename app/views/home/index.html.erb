@@ -1,7 +1,9 @@
 <h1>Bienvenido!</h1>
+<%= mostrar_nombre %>
+<%= sumar_dos(5) %>
 <ul>
-    <li><a href="http://localhost:3000/kinds">Tipos</a></li>
-    <li><a href="http://localhost:3000/contacts">Contactos</a></li>
-    <li><a href="http://localhost:3000/addresses">Direcciones</a></li>
-    <li><a href="http://localhost:3000/phones">Teléfonos</a></li>
+    <li><%= link_to "Tipos", kinds_path %></li>
+    <li><%= link_to "Contactos", contacts_path %></li>
+    <li><%= link_to "Direcciones", addresses_path %></li>
+    <li><%= link_to "Teléfonos", phones_path %></li>
 </ul>
