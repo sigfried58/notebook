@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :kind__id %>
-    <%= form.text_field :kind__id, id: :contact_kind__id %>
+    <%= form.label :kind_id %>
+    <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description) %>
   </div>
 
   <div class="field">
