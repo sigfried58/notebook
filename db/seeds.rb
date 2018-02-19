@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts 'Generando los tipos de Contactos (Kinds)...'
+Kind.create!([{description: 'Amigo'}, 
+            {description: 'Contacto'}, 
+            {description: 'Comercial'}])
+puts 'Generando los tipos de Contactos (Kinds)... [OK]'
+
+puts 'Generando contactos...'
+10.times do |i|
+  Contact.create!(
+    name: Faker::Name.name,
+    email: Faker::Internet.email,
+    kind: Kind.all.sample,
+    rmk: Faker::Lorem.paragraph([1,2,3,4,5].sample)
+    )
+end
+puts 'Generando contactos (Contacts)... [OK]'
