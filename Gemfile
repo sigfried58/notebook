@@ -18,6 +18,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
+# Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting
+gem 'rails-i18n', '~> 5.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
