@@ -1,0 +1,6 @@
+es:
+  buttons:
+    show: "Ver"
+    edit: "Editar"
+    destroy: "Eliminar"
+    new: "Nuevo"

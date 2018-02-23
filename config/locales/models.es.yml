@@ -1,10 +1,22 @@
 es:
   activerecord:
     models:
-      contact: Contacto
+      contact:
+        one: Contacto
+        other: Contactos
+      address:
+        one: Dirección
+        other: Direcciones
     attributes:
       contact:
         name: "Nombre"
-        email: "Email"
+        email: "E-mail"
         kind: "Tipo de Contacto"  
-        rmk: "Obs"
+        kind_id: "Tipo de Contacto"
+        rmk: "Obs."
+      address:
+        street: "Calle"
+        city: "Ciudad"
+        state: "Estado"
+        contact_id: "Contacto"
+        contact: "Contacto"
