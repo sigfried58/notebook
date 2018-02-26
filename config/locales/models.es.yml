@@ -7,6 +7,9 @@ es:
       address:
         one: Dirección
         other: Direcciones
+      phone:
+        one: Teléfono
+        other: Teléfonos
     attributes:
       contact:
         name: "Nombre"
@@ -20,3 +23,5 @@ es:
         state: "Estado"
         contact_id: "Contacto"
         contact: "Contacto"
+      phone:
+        phone: "Teléfono"

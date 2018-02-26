@@ -8,6 +8,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+# Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms 
+gem 'cocoon'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -43,6 +46,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  # Rails >= 3 pry initializer 
+  gem 'pry-rails'
 end
 
 group :development do
