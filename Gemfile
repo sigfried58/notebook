@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps 
+gem 'kaminari'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms 
 gem 'cocoon'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
