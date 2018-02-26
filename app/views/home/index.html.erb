@@ -1,11 +1,10 @@
-<h1>Bienvenido!</h1>
-<h2><%= t 'hello.friend' %></h2>
-<h2><%= l Date.today %></h2>
-<%= mostrar_nombre %>
-<%= sumar_dos(5) %>
-<ul>
-    <li><%= link_to "Tipos", kinds_path %></li>
-    <li><%= link_to "Contactos", contacts_path %></li>
-    <li><%= link_to "Direcciones", addresses_path %></li>
-    <li><%= link_to "Teléfonos", phones_path %></li>
-</ul>
+<div class="basic-grey"> 
+    <h1>Bienvenido!</h1>
+
+    <ul>
+        <li><%= link_to "Tipos", kinds_path %></li>
+        <li><%= link_to "Contactos", contacts_path %></li>
+        <li><%= link_to "Direcciones", addresses_path %></li>
+        <li><%= link_to "Teléfonos", phones_path %></li>
+    </ul>
+</div>
