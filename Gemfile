@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+# Bundler-like DSL + rake tasks for Bower on Rails 
+gem "bower-rails", "~> 0.11.0"
 # i18n for kaminari
 gem 'kaminari-i18n'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps 

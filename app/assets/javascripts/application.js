@@ -14,4 +14,5 @@
 //= require jquery
 //= require turbolinks
 //= require cocoon
+//= require notifyjs/dist/notify
 //= require_tree .
