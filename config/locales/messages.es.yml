@@ -2,3 +2,6 @@ es:
   messages:
     confirm: ¿Estás seguro?
     listing: Listando
+    errors: 
+      one: Error ocurrido..
+      more: Errores ocurridos..

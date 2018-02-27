@@ -1,17 +1,5 @@
 <%= form_with(model: contact, local: true, html: { class: "basic-grey" }) do |form| %>
-  <% if contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-
-      <ul>
-      <% contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <h1>Contacts</h1>
+   <h1>Contacto</h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -63,5 +51,15 @@
     <%= form.submit "Enviar", class: "button"%>
     <%= link_to 'Back', contacts_path, class: "button-back"%>
   </div>
-  
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= "#{pluralize(contact.errors.count, '')} #{ (contact.errors.count > 1) ? t('messages.errors.more'): t('messages.errors.one')}" %></h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 <% end %>
