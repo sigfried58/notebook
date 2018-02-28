@@ -6,6 +6,12 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bundler', '>= 1.8.4'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-notifyjs'
+  gem 'rails-assets-bootstrap', '3.3.7'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # i18n for kaminari
