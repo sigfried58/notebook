@@ -1,6 +1,9 @@
 es:
   activerecord:
     models:
+      kind:
+        one: Tipo
+        other: Tipos
       contact:
         one: Contacto
         other: Contactos
@@ -25,3 +28,5 @@ es:
         contact: "Contacto"
       phone:
         phone: "Teléfono"
+      kind:
+        description: "Descripción"

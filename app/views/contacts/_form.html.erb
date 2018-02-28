@@ -36,7 +36,7 @@
       <%= render partial: "phone_fields", locals: {f: phones_fields} %>
     <% end %>
     <div class="field">
-      <%= form.label :phones, ">" %><br>
+      <%= form.label :phones, "<span class='glyphicon glyphicon-phone-alt' aria-hidden='true'></span>".html_safe %><br>
       <%= link_to_add_association('[Agregar teléfono]', form, :phones) %>
     </div>
     <br>
@@ -48,8 +48,8 @@
   </div>
 
   <div class="field">
-    <%= form.submit "Enviar", class: "button"%>
-    <%= link_to 'Back', contacts_path, class: "button-back"%>
+    <%= form.submit t('buttons.save'), class: "btn btn-primary"%>
+    <%= link_to t('buttons.back'), contacts_path, class: "btn btn-success"%>
   </div>
   <% if contact.errors.any? %>
     <div id="error_explanation">

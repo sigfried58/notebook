@@ -3,10 +3,7 @@
     <h1>Bienvenido!</h1>
 
     <ul>
-        <li><%= link_to "Tipos", kinds_path %></li>
-        <li><%= link_to "Contactos", contacts_path %></li>
-        <li><%= link_to "Direcciones", addresses_path %></li>
-        <li><%= link_to "Teléfonos", phones_path %></li>
-        <li><%= link_to "Test de AJAX", phones_path, remote: true %></li>
+        <li><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> - <%= link_to "Tipos", kinds_path %></li>
+        <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> - <%= link_to "Contactos", contacts_path %></li>
     </ul>
 </div>

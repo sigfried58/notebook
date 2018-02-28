@@ -5,3 +5,5 @@ es:
     destroy: "Eliminar"
     new: "Nuevo"
     home: "Inicio"
+    back: "Volver"
+    save: "Guardar"

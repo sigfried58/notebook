@@ -5,3 +5,6 @@ es:
     errors: 
       one: Error ocurrido..
       more: Errores ocurridos..
+    created: Item creado correctamente!
+    updated: Item actualizado correctamente!
+    destroyed: Item eliminado correctamente!
