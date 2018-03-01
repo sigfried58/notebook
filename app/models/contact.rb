@@ -4,8 +4,8 @@ class Contact < ApplicationRecord
   validates_presence_of :kind
 
   belongs_to :kind #, optional: true
-  has_one :address
-  has_many :phones
+  has_one :address, dependent: :destroy
+  has_many :phones, dependent: :destroy
 
   accepts_nested_attributes_for :address, update_only: true
   accepts_nested_attributes_for :phones, reject_if: :all_blank, allow_destroy: true
